@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
+import os
 import pickle
 
-# Load the trained model
-model = pickle.load(open("xgb_model.pkl", "rb"))
+model_path = os.path.join(os.path.dirname(__file__), "xgb_model.pkl")
+model = pickle.load(open(model_path, "rb"))
 
 st.title("Customer Churn Prediction App")
 
