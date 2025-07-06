@@ -1,12 +1,6 @@
 streamlit
 pandas
-xgboost
 scikit-learn
+xgboost
 matplotlib
 seaborn
-
-
-Optional: Generate it Automatically (if needed)
-If you're working in a virtual environment and want to capture exact versions:
-
-pip freeze > requirements.txt
